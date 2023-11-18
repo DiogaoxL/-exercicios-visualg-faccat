@@ -1,17 +1,17 @@
 Algoritmo "ex 24"
-// Disciplina   : [LÛgica de ProgramaÁ„o]
+// Disciplina   : [L√≥gica de Programa√ß√£o]
 // Professor   : Obama 
-// DescriÁ„o   : 24) Ler o sal·rio fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que
-//ele recebe uma comiss„o de 3% sobre o total das vendas atÈ R$ 1.500,00 mais 5% sobre o que
-//ultrapassar este valor, calcular e escrever o seu sal·rio total.
+// Descri√ß√£o   : 24) Ler o sal√°rio fixo e o valor das vendas efetuadas pelo vendedor de uma empresa. Sabendo-se que
+//ele recebe uma comiss√£o de 3% sobre o total das vendas at√© R$ 1.500,00 mais 5% sobre o que
+//ultrapassar este valor, calcular e escrever o seu sal√°rio total.
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 16/10/2023
 Var
-// SeÁ„o de DeclaraÁıes das vari·veis 
+// Se√ß√£o de Declara√ß√µes das vari√°veis 
 salario_fixo,valor_vendas , comissao:real
 
 Inicio
-// SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc... 
+// Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc... 
 escrevaL("Qual seu salario fixo? ")
 leia(salario_fixo)
 escrevaL("Qual o valor das vendas que voce fez? ")
@@ -19,11 +19,11 @@ leia(valor_vendas)
 
 se (valor_vendas <= 1500) entao
    comissao <- (valor_vendas * 3) / 100
-   escreval("seu novo salario È : " , comissao + salario_fixo)
+   escreval("seu novo salario √© : " , comissao + salario_fixo)
 senao
 se (valor_vendas > 1500) entao
-   comissao <- (valor_vendas * 5) / 100
-   escreval("seu novo salario È : " , comissao + salario_fixo)
+   comissao <- ((1500 * 3) / 100) + (((valor_vendas - 1500) * 5) / 100)
+   escreval("seu novo salario √© : " , comissao + salario_fixo)
    fimse
    fimse
 
